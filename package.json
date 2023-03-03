@@ -1,9 +1,10 @@
 {
   "name": "secret-file-action",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Write a secret to a local file during a workflow",
   "main": "index.js",
   "scripts": {
+    "build": "./node_modules/.bin/ncc build index.js --license licenses.txt",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -14,11 +15,14 @@
   "author": "",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/ttd2089/secret-file-action/issues"
+    "url": "https://github.com/lukasa1993/secret-file-action/issues"
   },
-  "homepage": "https://github.com/ttd2089/secret-file-action#readme",
+  "homepage": "https://github.com/lukasa1993/secret-file-action#readme",
+  "devDependencies": {
+    "@vercel/ncc": "^0.33.4"
+  },
   "dependencies": {
-    "@actions/core": "^1.4.0",
-    "@actions/github": "^5.0.0"
+    "@actions/core": "1.10.0",
+    "@actions/github": "5.1.1"
   }
 }

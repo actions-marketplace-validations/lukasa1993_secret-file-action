@@ -1,10 +1,8 @@
 const crypto = require('crypto');
 const fs = require('fs');
 const core = require('@actions/core');
-const github = require('@actions/github');
 
 try {
-
   const secret = core.getInput('secret');
 
   const decoded = core.getBooleanInput('b64-decode')
