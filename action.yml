@@ -10,10 +10,8 @@ inputs:
   b64-decode:
     description: Indicates whether to base64 decode the secret value
     required: true
-    default: true
   outputs:
-    file:
-      description: The file the secret was written to
+    description: secret out
 runs:
   using: "node16"
   main: "dist/index.js"
