@@ -24,7 +24,7 @@ The file the secret was written to.
 steps:
 
   - name: GPG Key Secret File
-    uses: ttd2089/secret-file-action@v1.1
+    uses: lukasa1993/secret-file-action@v1.0.3
     id: gpg-key-secret
     with:
       secret: ${{ secrets.GPG_KEY }}
