@@ -1,4 +1,4 @@
-name: Secret File
+name: Secret File v2
 description: Write a secret to a local file during a workflow
 branding:
   icon: lock
